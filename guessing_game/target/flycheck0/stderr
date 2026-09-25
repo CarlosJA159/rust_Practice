@@ -1,59 +1,12 @@
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   0.014420500s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint error for guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game)/Check { test: false }/TargetInner { name: "guessing_game", doc: true, ..: with_path("C:\\Users\\Gaming pc\\Documents\\Repositories\\rust_Practice\\guessing_game\\src\\main.rs", Edition2024) }
-   0.014449700s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game\target\debug\.fingerprint\guessing_game-f269fb36e3cc6c42\bin-guessing_game`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_libgit2_prerelease
-  11: <unknown>
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: git_midx_writer_dump
-  16: git_filter_source_repo
-  17: git_midx_writer_dump
-  18: BaseThreadInitThunk
-  19: RtlUserThreadStart
-   0.023957000s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint error for guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game)/Check { test: true }/TargetInner { name: "guessing_game", doc: true, ..: with_path("C:\\Users\\Gaming pc\\Documents\\Repositories\\rust_Practice\\guessing_game\\src\\main.rs", Edition2024) }
-   0.023977200s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game\target\debug\.fingerprint\guessing_game-d9dbabb239023e31\test-bin-guessing_game`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_libgit2_prerelease
-  11: <unknown>
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: git_midx_writer_dump
-  16: git_filter_source_repo
-  17: git_midx_writer_dump
-  18: BaseThreadInitThunk
-  19: RtlUserThreadStart
+   0.018155700s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\Gaming pc\\Documents\\Repositories\\rust_Practice\\guessing_game\\src\\main.rs"
+   0.018179000s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\Gaming pc\\Documents\\Repositories\\rust_Practice\\guessing_game\\target\\debug\\.fingerprint\\guessing_game-19ab795a291d6fca\\dep-bin-guessing_game"
+   0.018184800s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13434772526, nanos: 644862500 } < FileTime { seconds: 13434774224, nanos: 610713500 }
+   0.018288700s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint dirty for guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game)/Check { test: false }/TargetInner { name: "guessing_game", doc: true, ..: with_path("C:\\Users\\Gaming pc\\Documents\\Repositories\\rust_Practice\\guessing_game\\src\\main.rs", Edition2024) }
+   0.018307100s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\Gaming pc\\Documents\\Repositories\\rust_Practice\\guessing_game\\target\\debug\\.fingerprint\\guessing_game-19ab795a291d6fca\\dep-bin-guessing_game", reference_mtime: FileTime { seconds: 13434772526, nanos: 644862500 }, stale: "C:\\Users\\Gaming pc\\Documents\\Repositories\\rust_Practice\\guessing_game\\src\\main.rs", stale_mtime: FileTime { seconds: 13434774224, nanos: 610713500 } }))
+   0.020165300s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\Gaming pc\\Documents\\Repositories\\rust_Practice\\guessing_game\\src\\main.rs"
+   0.020176100s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\Gaming pc\\Documents\\Repositories\\rust_Practice\\guessing_game\\target\\debug\\.fingerprint\\guessing_game-0ac2b1b4d5623097\\dep-test-bin-guessing_game"
+   0.020180800s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13434772526, nanos: 644862500 } < FileTime { seconds: 13434774224, nanos: 610713500 }
+   0.020254500s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint dirty for guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game)/Check { test: true }/TargetInner { name: "guessing_game", doc: true, ..: with_path("C:\\Users\\Gaming pc\\Documents\\Repositories\\rust_Practice\\guessing_game\\src\\main.rs", Edition2024) }
+   0.020266700s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\Gaming pc\\Documents\\Repositories\\rust_Practice\\guessing_game\\target\\debug\\.fingerprint\\guessing_game-0ac2b1b4d5623097\\dep-test-bin-guessing_game", reference_mtime: FileTime { seconds: 13434772526, nanos: 644862500 }, stale: "C:\\Users\\Gaming pc\\Documents\\Repositories\\rust_Practice\\guessing_game\\src\\main.rs", stale_mtime: FileTime { seconds: 13434774224, nanos: 610713500 } }))
     Checking guessing_game v0.1.0 (C:\Users\Gaming pc\Documents\Repositories\rust_Practice\guessing_game)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.10s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s
